@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EV3_EQ5.Views.Login">
+    <Grid>
+        <Grid>
+            <Image Source="https://img2.wallspic.com/previews/2/2/1/5/3/135122/135122-tasogare-ben_shu-jian_zhu-shu_gui-jia_zi-x750.jpg" Aspect="AspectFill" />
+        </Grid>
+
+        <StackLayout Padding="0">
+            <StackLayout Margin="20,110,20,0">
+                <Image Source="https://pbs.twimg.com/profile_images/378800000378343141/4e019029b0f92629f634c33d0833cdae_400x400.jpeg" WidthRequest="200" HeightRequest="200"/>
+                <Frame HasShadow="False" 
+                   BackgroundColor="Transparent" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="FillAndExpand" 
+                   HeightRequest="450">
+                    <StackLayout Margin="0,50,0,0">
+                        <StackLayout>
+                            <Frame BackgroundColor="White" 
+                               BorderColor="White" 
+                               Padding="0" Margin="0" 
+                               CornerRadius="50" 
+                               HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry Placeholder="Correo"
+                                       x:Name="TxtCorreo"
+                                       TextColor="Black" 
+                                       HorizontalOptions="FillAndExpand" 
+                                       Margin="15,0,15,0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="White" 
+                               BorderColor="White" 
+                               Padding="0" 
+                               Margin="0,20,0,0" 
+                               CornerRadius="50" 
+                               HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry Placeholder="Contraseña" 
+                                       x:Name="TxtPassword"
+                                       IsPassword="True" 
+                                       TextColor="Black" 
+                                       HorizontalOptions="FillAndExpand" 
+                                       Margin="15,0,15,0"></Entry>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+
+                        <!--<StackLayout Orientation="Horizontal" Margin="0,10,0,10">
+                            <Label Text="¿Olvidaste la Contraseña?" TextColor="White" 
+                               HorizontalTextAlignment="End" 
+                               VerticalTextAlignment="Center" 
+                               HorizontalOptions="CenterAndExpand" 
+                               FontAttributes="Bold" 
+                               TextDecorations="Underline"></Label>
+                        </StackLayout>-->
+
+                        <StackLayout>
+                            <Frame BackgroundColor="Transparent" 
+                               BorderColor="Black" 
+                               Padding="0" 
+                               Margin="0" 
+                               CornerRadius="50" 
+                               HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Button Text="Ingresar" 
+                                        FontFamily="Arial" 
+                                        BackgroundColor="Blue" 
+                                        TextColor="White" 
+                                        FontAttributes="Bold" 
+                                        HorizontalOptions="FillAndExpand" 
+                                        CornerRadius="30"
+                                        Clicked="ingresarButton_Clicked"></Button >
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" 
+                                 HorizontalOptions="Center">
+
+                            <Label Text="¿No tienes cuenta?" 
+                               TextColor="White"></Label>
+                            <Button x:Name="registroButton"
+                                Text="Regístrate"
+                                BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                TextColor="White"
+                                Margin="0,-15,0,0"
+                                FontAttributes="Bold"
+                                TextTransform="None"
+                                Clicked="registroButton_Clicked" />
+                        </StackLayout>
+
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

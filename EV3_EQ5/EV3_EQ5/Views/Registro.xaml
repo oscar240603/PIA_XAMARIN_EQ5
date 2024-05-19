@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EV3_EQ5.Views.Registro">
+    <ContentPage.Content>
+        <Grid>
+            <Grid>
+                <Image Source="https://wallpapers.com/images/hd/reading-background-cr7rqaop9nn633we.jpg" Aspect="AspectFill" />
+            </Grid>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Frame Padding="20"
+               CornerRadius="10"
+               BackgroundColor="WhiteSmoke"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="FillAndExpand"
+               Margin="20,-150,20,0">
+
+                    <StackLayout>
+
+                        <Label Text="Crear tu cuenta"
+                       FontSize="Large"
+                       
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20" />
+
+                        <Entry Placeholder="Nombre Completo"  x:Name="TxtName" />
+
+                        <Entry Placeholder="Edad"  x:Name="TxtEdad" />
+
+                        <Entry Placeholder="Matricula" x:Name="TxtMatricula" />
+
+                        <Entry Placeholder="Correo Electrónico" x:Name="TxtEmail" />
+
+                        <Entry Placeholder="Contraseña" x:Name="TxtPassword"
+                       IsPassword="True" />
+
+                        <Button Text="Registrar"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="Blue"
+                        FontAttributes="Bold"
+                        CornerRadius="20"
+                        Margin="70,10,70,0"
+                        Clicked="ButtonRegistrar_Clicked"
+                        />
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EV3_EQ5.Views.ModificarSala"
+             BackgroundImageSource="https://mexicogob.com/escuelas/wp-content/uploads/2022/03/AF1QipO45WYl1XaEfBG5pMVSOl21hdKmRmXaYoUgP-GXw408-h305-k-no.jpg">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="Margin" Value="0,0,0,10" />
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="Margin" Value="15,0,15,0" />
+        </Style>
+        <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="White" />
+            <Setter Property="CornerRadius" Value="20" />
+            <Setter Property="Margin" Value="50,0,50,20" />
+        </Style>
+        <Style TargetType="Picker">
+            <Setter Property="BackgroundColor" Value="White" />
+            <Setter Property="Margin" Value="100,0,100,20" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+        </Style>
+        <Style TargetType="DatePicker">
+            <Setter Property="Margin" Value="60,0,60,20" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+        </Style>
+        <Style TargetType="TimePicker">
+            <Setter Property="Margin" Value="80,0,80,20" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="White" />
+            <Setter Property="CornerRadius" Value="50" />
+            <Setter Property="Margin" Value="50,0,50,0" />
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout>
+
+        <ImageButton x:Name="atrasModificar"
+                     BackgroundColor="Transparent"
+                     Source="https://cdn-icons-png.flaticon.com/512/94/94510.png"
+                     HorizontalOptions="Start" 
+                     HeightRequest="50" 
+                     WidthRequest="60"
+                     Clicked="atrasModificar_Clicked" />
+
+        <Label Text="Modifica la reservación" 
+               FontSize="30"
+               TextColor="Black"
+               FontAttributes="Italic"
+               Margin="0,20,0,40" />
+
+        <Frame>
+            <Entry Placeholder="Id Sala"
+                   x:Name="TxtSala"
+                   HorizontalTextAlignment="Center"/>
+        </Frame>
+
+        <Label Text="Selecciona la sala" />
+        <Picker x:Name="pickermodifisala"
+            Margin="0,0,0,10"
+            Title="0"
+            TitleColor="Black"
+            FontSize="20"
+            HeightRequest="40"
+            HorizontalOptions="CenterAndExpand"/>
+
+        <Label Text="Selecciona el día" />
+        <DatePicker x:Name="datemodifiPicker"
+                    TextColor="White"/>
+
+        <Label Text="Selecciona la hora" />
+        <TimePicker x:Name="timemodifiPicker"
+                    TextColor="White"/>
+
+        <Button x:Name="savemodifi"
+                Text="Guardar reservación"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Clicked="savemodifi_Clicked" />
+
+    </StackLayout>
+
+</ContentPage>

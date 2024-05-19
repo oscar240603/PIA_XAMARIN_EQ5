@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EV3_EQ5.Views.Consultarsala"
+             BackgroundImageSource="https://mexicogob.com/escuelas/wp-content/uploads/2022/03/AF1QipO45WYl1XaEfBG5pMVSOl21hdKmRmXaYoUgP-GXw408-h305-k-no.jpg">
+
+    <StackLayout Spacing="10" Padding="20" HorizontalOptions="CenterAndExpand">
+
+        <!-- Botón de retroceso -->
+        <ImageButton x:Name="atrasConsu" 
+                     Source="https://cdn-icons-png.flaticon.com/512/94/94510.png"
+                     BackgroundColor="Transparent"
+                     HorizontalOptions="Start" 
+                     HeightRequest="50" 
+                     WidthRequest="60"
+                     Clicked="atrasConsu_Clicked"/>
+
+        <!-- Título de la página -->
+        <Label Text="Salas Reservadas"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               FontSize="30"
+               FontAttributes="Italic"/>
+
+        <!-- Lista de salas reservadas -->
+        <ListView x:Name="listView"
+                  BackgroundColor="White"
+                  SeparatorVisibility="Default"
+                  VerticalOptions="FillAndExpand"
+                  WidthRequest="300">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Spacing="80">
+                            <Label Text="{Binding Sala}" 
+                                   FontSize="Subtitle" 
+                                   FontAttributes="Bold" 
+                                   TextColor="Black" 
+                                   HorizontalOptions="Start"
+                                   Margin="10,0,0,0"/>
+                            <StackLayout Spacing="0" VerticalOptions="Center">
+                                <Label Text="{Binding Fecha}" FontSize="Subtitle" FontAttributes="Bold" TextColor="Black" VerticalOptions="Center"/>
+                                <Label Text="{Binding Hora}" FontSize="Subtitle" FontAttributes="Bold" TextColor="Black" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EV3_EQ5.Views.ApartaSala"
+             BackgroundImageSource="https://mexicogob.com/escuelas/wp-content/uploads/2022/03/AF1QipO45WYl1XaEfBG5pMVSOl21hdKmRmXaYoUgP-GXw408-h305-k-no.jpg">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="Margin" Value="0,10" />
+        </Style>
+        <Style TargetType="ImageButton">
+            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="HeightRequest" Value="50" />
+            <Setter Property="WidthRequest" Value="60" />
+            <Setter Property="HorizontalOptions" Value="Start" />
+        </Style>
+        <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="Margin" Value="20" />
+            <Setter Property="Padding" Value="20" />
+        </Style>
+        <Style TargetType="Picker">
+            <Setter Property="BackgroundColor" Value="White" />
+            <Setter Property="Margin" Value="0,10" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+        </Style>
+        <Style TargetType="DatePicker">
+            <Setter Property="Margin" Value="0,10" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        </Style>
+        <Style TargetType="TimePicker">
+            <Setter Property="Margin" Value="0,10" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="CornerRadius" Value="50" />
+            <Setter Property="Margin" Value="0,10" />
+            <Setter Property="BackgroundColor" Value="White" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout>
+            <ImageButton x:Name="atrasAparta"
+                         Source="https://cdn-icons-png.flaticon.com/512/94/94510.png"
+                         Clicked="atrasAparta_Clicked" />
+
+            <Label Text="Aparta tu sala"
+                   FontSize="30"
+                   TextColor="Black"
+                   Margin="0,0,0,-10"
+                   FontAttributes="Italic" />
+
+            <Frame>
+                <StackLayout>
+                    <Image Source="https://img.freepik.com/premium-photo/blurred-conference-room-background_63313-2123.jpg?w=740"
+                           Aspect="AspectFill"
+                           HeightRequest="200"
+                           Margin="0,0,0,10"/>
+                    <Label Text="Selecciona la sala" />
+                    <Picker x:Name="pickersala"
+                            SelectedIndexChanged="pickersala_SelectedIndexChanged"
+                            Margin="0,0,0,10"
+                            Title="0"
+                            TitleColor="Black"
+                            FontSize="20"
+                            HeightRequest="40"
+                            HorizontalOptions="CenterAndExpand"/>
+                    <Label Text="Selecciona el día" />
+                    <DatePicker x:Name="datePicker"
+                                Margin="0,0,0,10"
+                                TextColor="White"
+                                HeightRequest="40"
+                                HorizontalOptions="CenterAndExpand"/>
+                    <Label Text="Selecciona la hora(solo se puede por hora)"
+                           HorizontalTextAlignment="Center"/>
+                    <TimePicker x:Name="timePicker"
+                                Margin="0,0,0,10"
+                                TextColor="White"
+                                HeightRequest="40"
+                                HorizontalOptions="CenterAndExpand"/>
+                    <Button x:Name="save"
+                            Text="Guardar reservación"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            Clicked="save_Clicked" />
+                    <Button x:Name="consuSala"
+                            Text="Consultar reservaciones"
+                            BackgroundColor="White"
+                            TextColor="Black"                          
+                            Clicked="consuSala_Clicked" />
+                    <Button x:Name="modifiSala"
+                            Text="Modifica tu reservación"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            Clicked="modifiSala_Clicked" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

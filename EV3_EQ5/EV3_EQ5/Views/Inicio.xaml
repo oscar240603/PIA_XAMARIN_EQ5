@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EV3_EQ5.Views.Inicio"
+             BackgroundImageSource="https://mexicogob.com/escuelas/wp-content/uploads/2022/03/AF1QipO45WYl1XaEfBG5pMVSOl21hdKmRmXaYoUgP-GXw408-h305-k-no.jpg">
+    <StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <ImageButton x:Name="atrasInicio" 
+                         Source="https://cdn-icons-png.flaticon.com/512/94/94510.png"
+                         HeightRequest="50" 
+                         WidthRequest="60"
+                         Aspect="AspectFit"
+                         BackgroundColor="Transparent"
+                         HorizontalOptions="Start"
+                         Clicked="atrasInicio_Clicked"
+                         Grid.Column="0"/>
+
+            <ImageButton x:Name="perfil"
+                         Source="https://toowoombaautoservices.com.au/wp-content/uploads/2020/01/person-1824144_1280-1080x1080.png"
+                         HeightRequest="50" 
+                         WidthRequest="60"
+                         Margin="0,5,0,0"
+                         BackgroundColor="Transparent"
+                         Aspect="AspectFit"
+                         HorizontalOptions="End"
+                         Clicked="perfil_Clicked"
+                         Grid.Column="1"/>
+        </Grid>
+
+        <Label Text="Bienvenido"
+               HorizontalOptions="Center" 
+               TextColor="Black" 
+               FontSize="30" 
+               FontAttributes="Italic"/>
+        <Frame BackgroundColor="Transparent">
+            <StackLayout>
+               <!-- <Grid VerticalOptions="CenterAndExpand" RowDefinitions="350,Auto" BackgroundColor="White">
+                    <CarouselView Margin="0" IsBounceEnabled="True" ItemsSource="{Binding ImageCollection}"
+                              IndicatorView="indicatorView">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid HorizontalOptions="FillAndExpand">
+                                <Image Source="{Binding _Image}"
+                                       Aspect="AspectFill"
+                                       HorizontalOptions="FillAndExpand">
+
+                                </Image>
+
+                            </Grid>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <IndicatorView Grid.Row="1" Margin="0,0,0,20" VerticalOptions="EndAndExpand" x:Name="indicatorView"
+                               IndicatorColor="Gray" SelectedIndicatorColor="Blue"
+                               HorizontalOptions="Center"/>
+                </Grid> -->
+                <Image Source="https://img.freepik.com/premium-photo/blurred-conference-room-background_63313-2123.jpg?w=740"
+                       WidthRequest="200"
+                       HeightRequest="200"/>
+               
+                <Button Text="Aparta tu sala"
+                        TextColor="Black"
+                        BackgroundColor="Beige"
+                        x:Name="btnAparta"
+                        CornerRadius="20" 
+                        Margin="0,0,0,-30"
+                        Padding="15"
+                        HorizontalOptions="CenterAndExpand" 
+                        FontAttributes="Bold"
+                        Clicked="btnAparta_Clicked"
+                 />
+                
+            </StackLayout>
+        </Frame>
+        <Frame BackgroundColor="Transparent" Margin="0,50,0,0">
+            <StackLayout>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/011/395/658/non_2x/rules-and-regulations-policy-and-guideline-for-employee-to-follow-businessman-finish-writing-rules-and-regulations-document-modern-flat-illustration-vector.jpg"
+                       HeightRequest="200"
+                       WidthRequest="200"/>
+                <Button Text="Ver reglamento"
+                BackgroundColor="Beige"
+                x:Name="btnreglamento"
+                CornerRadius="20" 
+                Margin="0,0,0,0" 
+                HorizontalOptions="CenterAndExpand" 
+                FontAttributes="Bold"
+                Clicked="btnreglamento_Clicked"/>
+                
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+    
+</ContentPage>

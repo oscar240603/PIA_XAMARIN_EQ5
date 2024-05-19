@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EV3_EQ5.Views.Perfil"
+             BackgroundImageSource="https://mexicogob.com/escuelas/wp-content/uploads/2022/03/AF1QipO45WYl1XaEfBG5pMVSOl21hdKmRmXaYoUgP-GXw408-h305-k-no.jpg">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="20" VerticalOptions="StartAndExpand">
+
+            <!-- Encabezado -->
+            <Label Text="Perfil de usuario"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+
+            <!-- Contenedor de información -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="20"
+                   Padding="20"
+                   HasShadow="True">
+
+                <StackLayout Spacing="10">
+
+                    <!-- Nombre -->
+                    <Label Text="Nombre:"
+                           TextColor="Black"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+
+                    <Label Text="John Doe"
+                           x:Name="txtNombre"
+                           TextColor="Black"
+                           FontSize="Medium"
+                           HorizontalOptions="Center"/>
+
+                    <!-- Edad -->
+                    <Label Text="Edad:"
+                       TextColor="Black"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"/>
+
+                    <Label Text="john doe"
+                       x:Name="txtEdad"
+                       TextColor="Black"
+                       FontSize="Medium"
+                       HorizontalOptions="Center"/>
+
+                    <!-- Matricula -->
+                    <Label Text="Matricula:"
+                       TextColor="Black"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"/>
+
+                    <Label Text="john doe"
+                       x:Name="txtMatricula"
+                       TextColor="Black"
+                       FontSize="Medium"
+                       HorizontalOptions="Center"/>
+
+                    <!-- Email -->
+                    <Label Text="Email:"
+                           TextColor="Black"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+
+                    <Label Text="john.doe@example.com"
+                           x:Name="txtEmail"
+                           TextColor="Black"
+                           FontSize="Medium"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EV3_EQ5.Views.Reglamento"
+             BackgroundImageSource="https://mexicogob.com/escuelas/wp-content/uploads/2022/03/AF1QipO45WYl1XaEfBG5pMVSOl21hdKmRmXaYoUgP-GXw408-h305-k-no.jpg">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Label Text="Reglamento de cubículos"
+                   HorizontalOptions="Center"
+                   FontSize="30"
+                   FontAttributes="Italic"
+                   Margin="0,30,0,60"
+                   TextColor="Black" />
+            <Frame VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   Padding="20"
+                   BackgroundColor="White"
+                   CornerRadius="20"
+                   Margin="20,0">
+                <StackLayout>
+                    <StackLayout BackgroundColor="White">
+                        <StackLayout Orientation="Horizontal" Margin="5,0,0,0">
+                            <Label Text="✔️ " FontSize="Large" VerticalOptions="Center"/>
+                            <Label Text="Deben de estar presentes 4 a 6 personas mínimo dentro del cubículo" 
+                                   FontSize="20"
+                                   FontAttributes="Bold"
+                                   TextColor="Black"
+                                   HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="5,10,0,0">
+                            <Label Text="✔️" FontSize="Large" VerticalOptions="Center"/>
+                            <Label Text="No introducir alimentos o bebidas" 
+                                   FontSize="20"
+                                   FontAttributes="Bold"
+                                   TextColor="Black"
+                                   HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="5,10,0,0">
+                            <Label Text="✔️" FontSize="Large" VerticalOptions="Center"/>
+                            <Label Text="Tener un volumen de voz moderado" 
+                                   FontSize="20"
+                                   FontAttributes="Bold"
+                                   TextColor="Black"
+                                   HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="5,10,0,0">
+                            <Label Text="✔️" FontSize="Large" VerticalOptions="Center"/>
+                            <Label Text="Cerrar la puerta al salir del cubículo" 
+                                   FontSize="20"
+                                   FontAttributes="Bold"
+                                   TextColor="Black"
+                                   HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+
+                        <Label Text="Es indispensable cumplir con el reglamento para permanecer por el tiempo permitido, gracias"
+                               TextColor="Red"
+                               FontSize="20"
+                               Margin="5,20,0,0"
+                               HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
